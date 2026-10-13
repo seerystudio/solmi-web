@@ -109,128 +109,26 @@
                 </button>
             </figure>
 
-            <div class="how-grid">
-                <ol class="how-steps" id="how-steps" data-stagger>
-                    <li>
-                        <button type="button" class="how-step" data-step="1" aria-controls="how-diagram">
-                            <span class="how-num">01</span>
-                            <span class="how-txt">
-                                <b>Entra como el agua</b>
-                                <span>Lo aplicamos con rodillo y el producto entra en la estructura mojándola, por el mismo camino que hace la filtración.</span>
-                            </span>
-                            <i class="how-bar"></i>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="how-step" data-step="2" aria-controls="how-diagram">
-                            <span class="how-num">02</span>
-                            <span class="how-txt">
-                                <b>Se vuelve gel</b>
-                                <span>En segundos gelifica adentro de la fisura.</span>
-                            </span>
-                            <i class="how-bar"></i>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="how-step" data-step="3" aria-controls="how-diagram">
-                            <span class="how-num">03</span>
-                            <span class="how-txt">
-                                <b>Sella por dentro</b>
-                                <span>Queda elástico y adentro: no lo arruinan el sol, el granizo ni el tránsito.</span>
-                            </span>
-                            <i class="how-bar"></i>
-                        </button>
-                    </li>
-                </ol>
+            <ol class="how-steps" data-stagger>
+                <li>
+                    <span class="how-num">01</span>
+                    <b>Entra como el agua</b>
+                    <p>Lo aplicamos con rodillo y el producto entra en la estructura mojándola, por el mismo camino que hace la filtración.</p>
+                </li>
+                <li>
+                    <span class="how-num">02</span>
+                    <b>Se vuelve gel</b>
+                    <p>En segundos gelifica adentro de la fisura.</p>
+                </li>
+                <li>
+                    <span class="how-num">03</span>
+                    <b>Sella por dentro</b>
+                    <p>Queda elástico y adentro: no lo arruinan el sol, el granizo ni el tránsito.</p>
+                </li>
+            </ol>
 
-                <figure class="how-card reveal" id="how-diagram" data-step="0">
-                    <svg class="how-svg" viewBox="0 0 600 430" role="img" aria-labelledby="how-svg-t">
-                        <title id="how-svg-t">Corte de un techo con una fisura: el agua entra, el producto sigue el mismo camino, se vuelve gel y la sella por dentro.</title>
-                        <defs>
-                            <linearGradient id="hw-sky" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0" stop-color="#EAF4FB"/>
-                                <stop offset="1" stop-color="#F7FBFE"/>
-                            </linearGradient>
-                            <linearGradient id="hw-room" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0" stop-color="#E6ECF2"/>
-                                <stop offset="1" stop-color="#D8E1EA"/>
-                            </linearGradient>
-                            <pattern id="hw-grain" width="22" height="16" patternUnits="userSpaceOnUse">
-                                <circle cx="4" cy="4" r="1.6" fill="#B9C7D4"/>
-                                <circle cx="15" cy="10" r="2.2" fill="#C3D0DB"/>
-                                <circle cx="9" cy="13" r="1.1" fill="#AEBDCB"/>
-                            </pattern>
-                            <filter id="hw-soft" x="-30%" y="-80%" width="160%" height="260%"><feGaussianBlur stdDeviation="7"/></filter>
-                            <filter id="hw-glow" x="-50%" y="-50%" width="200%" height="200%">
-                                <feGaussianBlur stdDeviation="5" result="b"/>
-                                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-                            </filter>
-                            <path id="hw-drop" d="M0 -11 C5 -4 7 1 7 5 A7 7 0 0 1 -7 5 C-7 1 -5 -4 0 -11Z"/>
-                        </defs>
-
-                        <!-- cielo y lluvia -->
-                        <rect x="0" y="0" width="600" height="190" fill="url(#hw-sky)"/>
-                        <g class="hw-rain">
-                            <use href="#hw-drop" class="hw-r r1" x="110" y="40" fill="#5BBDEB"/>
-                            <use href="#hw-drop" class="hw-r r2" x="210" y="20" fill="#5BBDEB"/>
-                            <use href="#hw-drop" class="hw-r r3" x="300" y="60" fill="#5BBDEB"/>
-                            <use href="#hw-drop" class="hw-r r4" x="400" y="30" fill="#5BBDEB"/>
-                            <use href="#hw-drop" class="hw-r r5" x="490" y="50" fill="#5BBDEB"/>
-                        </g>
-
-                        <!-- losa -->
-                        <rect x="0" y="190" width="600" height="100" fill="#C7D4E0"/>
-                        <rect x="0" y="190" width="600" height="100" fill="url(#hw-grain)"/>
-                        <rect x="0" y="186" width="600" height="8" fill="#A9BACA"/>
-                        <!-- capa de producto sobre la superficie (paso 1) -->
-                        <rect class="hw-coat" x="0" y="183" width="600" height="7" fill="#007DBC"/>
-
-                        <!-- fisura -->
-                        <path class="hw-crack" d="M302 190 L292 208 L308 226 L294 244 L306 262 L296 290" fill="none" stroke="#5E7286" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
-                        <path class="hw-crack-in" d="M302 190 L292 208 L308 226 L294 244 L306 262 L296 290" fill="none" stroke="#3E5266" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-                        <!-- producto que entra por la fisura (paso 1) y se vuelve gel (paso 2) -->
-                        <path class="hw-fill" pathLength="1" d="M302 190 L292 208 L308 226 L294 244 L306 262 L296 290" fill="none" stroke="#007DBC" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
-                        <path class="hw-gel" pathLength="1" d="M302 190 L292 208 L308 226 L294 244 L306 262 L296 290" fill="none" stroke="#8CCBEB" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" filter="url(#hw-glow)"/>
-
-                        <!-- adentro de la casa -->
-                        <rect x="0" y="290" width="600" height="140" fill="url(#hw-room)"/>
-                        <rect x="0" y="290" width="600" height="6" fill="#B6C5D3"/>
-                        <ellipse class="hw-stain" cx="298" cy="304" rx="78" ry="16" fill="#7E95A9" opacity=".45" filter="url(#hw-soft)"/>
-                        <use href="#hw-drop" class="hw-drip" x="296" y="304" fill="#5BBDEB"/>
-                        <g class="hw-puddle"><ellipse cx="296" cy="404" rx="34" ry="5" fill="#5BBDEB" opacity=".45"/></g>
-
-                        <!-- rodillo (paso 1) -->
-                        <g class="hw-roller">
-                            <line x1="0" y1="-14" x2="-62" y2="-92" stroke="#5E7286" stroke-width="5" stroke-linecap="round"/>
-                            <rect x="-26" y="-22" width="52" height="20" rx="10" fill="#F5F8FB" stroke="#9FB0BF" stroke-width="2"/>
-                            <rect x="-24" y="-20" width="48" height="6" rx="3" fill="#007DBC" opacity=".35"/>
-                        </g>
-
-                        <!-- sellado (paso 3) -->
-                        <g class="hw-ok" transform="translate(470 352)">
-                            <rect x="-86" y="-20" width="172" height="40" rx="20" fill="#007DBC"/>
-                            <path d="M-62 0 l7 7 l13 -14" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <text x="-34" y="5.5" fill="#fff" font-size="15" font-weight="700" font-family="Roboto, system-ui, sans-serif">Sin filtración</text>
-                        </g>
-
-                        <!-- etiquetas -->
-                        <text x="20" y="214" class="hw-label">Tu techo</text>
-                        <text x="20" y="320" class="hw-label">Adentro de tu casa</text>
-                    </svg>
-                    <figcaption class="how-caption" id="how-caption" aria-live="polite">El agua entra por la fisura y gotea adentro.</figcaption>
-                </figure>
-            </div>
-
-            <div class="how-foot reveal">
-                <ul class="how-sin">
-                    <li>Sin membranas</li>
-                    <li>Sin pinturas</li>
-                    <li>Sin brea</li>
-                    <li>Sin polvo ni ruido</li>
-                </ul>
-                <!-- ⬜ Validar con Solmi antes de publicar: «No perforamos ni inyectamos». -->
-                <p class="how-vs">No perforamos ni inyectamos: <strong>el producto entra solo.</strong></p>
-            </div>
+            <!-- ⬜ Validar con Solmi antes de publicar: «No perforamos ni inyectamos». -->
+            <p class="how-sin reveal">Sin membranas, sin pinturas, sin brea, sin polvo ni ruido. <strong>No perforamos ni inyectamos: el producto entra solo.</strong></p>
         </div>
     </section>
 
@@ -622,54 +520,6 @@
             play.addEventListener('click', () => { vid.play(); });
             vid.addEventListener('play', () => { play.hidden = true; vid.controls = true; });
             vid.addEventListener('ended', () => { play.hidden = false; vid.controls = false; vid.currentTime = 0; });
-        })();
-
-        // Cómo funciona: el esquema recorre los pasos solo mientras se ve
-        (() => {
-            const card = document.getElementById('how-diagram');
-            const list = document.getElementById('how-steps');
-            const caption = document.getElementById('how-caption');
-            const buttons = [...list.querySelectorAll('.how-step')];
-            const CAPTIONS = [
-                'El agua entra por la fisura y gotea adentro.',
-                'El producto entra por el mismo camino que el agua.',
-                'En segundos se vuelve gel adentro de la fisura.',
-                'Sellado por dentro: el agua ya no pasa.'
-            ];
-            const DUR = [3200, 4200, 3400, 4600];
-            const auto = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            let step = 0, timer = null, inView = false;
-
-            const show = (n) => {
-                step = n;
-                card.dataset.step = n;
-                caption.textContent = CAPTIONS[n];
-                buttons.forEach((b) => {
-                    const on = Number(b.dataset.step) === n;
-                    b.setAttribute('aria-pressed', on);
-                    b.classList.remove('is-active');
-                    if (on) {
-                        b.style.setProperty('--how-ms', DUR[n] + 'ms');
-                        void b.offsetWidth; // reinicia la barra de progreso
-                        b.classList.add('is-active');
-                    }
-                });
-            };
-            const schedule = () => {
-                clearTimeout(timer);
-                if (!auto || !inView) return;
-                timer = setTimeout(() => { show((step + 1) % CAPTIONS.length); schedule(); }, DUR[step]);
-            };
-
-            buttons.forEach((b) => b.addEventListener('click', () => { show(Number(b.dataset.step)); schedule(); }));
-            if (!auto) list.classList.add('is-paused');
-
-            new IntersectionObserver(([entry]) => {
-                inView = entry.isIntersecting;
-                if (inView) schedule(); else clearTimeout(timer);
-            }, { threshold: 0.35 }).observe(card);
-
-            show(0);
         })();
 
         // Cintas de empresas: duplica cada lista para que el loop no tenga corte y ajusta la velocidad al largo
