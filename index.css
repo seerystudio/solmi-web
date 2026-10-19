@@ -138,7 +138,7 @@ ul { list-style: none; }
 }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 .brand { display: flex; align-items: center; }
-.nav .logo { height: 44px; width: auto; }  /* logo con la bajada «Impermeabilización elástica» (2026-10-14): SOLMI queda del mismo tamaño que antes */
+.nav .logo { height: 44px; width: auto; }  /* logo sello con «Impermeabilización elástica» arriba de SOLMI (2026-10-19) */
 .nav-links { display: flex; gap: 32px; align-items: center; font-weight: 400; font-size: 15px; }
 .nav-links a:not(.btn) { color: var(--tinta); transition: color 0.2s; }
 .nav-links a:not(.btn):hover { color: var(--azul); }
