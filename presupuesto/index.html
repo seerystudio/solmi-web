@@ -61,11 +61,11 @@
             <div class="ca-left">
                 <div class="ca-left-in">
                     <h1>Pedí tu presupuesto sin cargo.</h1>
-                    <p>Completá la ficha y se abre WhatsApp con tu consulta lista para mandar. Así no tenemos que ir y venir con preguntas.</p>
+                    <p>Completá la ficha y te escribimos por WhatsApp con todo lo que necesitamos para pasarte el presupuesto. Así no tenemos que ir y venir con preguntas.</p>
                     <p class="lema">Impermeabilización elástica Solmi. Sin molestias de obra.</p>
                     <ol class="pz-pasos">
                         <li><span><b>Completás la ficha</b>Qué hay que hacer, dónde y más o menos cuántos metros.</span></li>
-                        <li><span><b>Nos mandás fotos por WhatsApp</b>En el mismo chat que se abre. Con eso armamos el presupuesto.</span></li>
+                        <li><span><b>Te escribimos por WhatsApp</b>Te pedimos fotos del lugar y con eso armamos el presupuesto.</span></li>
                         <li><span><b>Lo aceptás desde el celular</b>Te llega como link: elegís la opción y lo confirmás con tu nombre.</span></li>
                     </ol>
                 </div>
@@ -112,18 +112,19 @@
                         <div class="cf-group"><label for="p-m2">Metros cuadrados <small>(aproximado)</small></label><div class="pz-m2"><input id="p-m2" name="m2" type="number" min="1" step="1" inputmode="numeric" placeholder="Ej: 60"><label class="pz-nose"><input type="checkbox" id="p-nose" name="nose"> No sé</label></div></div>
                         <div class="cf-group"><label for="p-nom">Nombre</label><input id="p-nom" name="nombre" required autocomplete="name" placeholder="¿Cómo te llamás?"></div>
                     </div>
+                    <div class="cf-group"><label for="p-tel">Tu WhatsApp</label><input id="p-tel" name="whatsapp" type="tel" required inputmode="tel" autocomplete="tel" placeholder="Ej: 11 5555 1234"></div>
                     <div class="cf-group"><label for="p-det">Detalles <small>(opcional)</small></label><textarea id="p-det" name="detalles" rows="3" placeholder="Desde cuándo filtra, si hay humedad adentro, horarios para visitar…"></textarea></div>
                     <p class="pz-error" id="p-error" role="alert" hidden></p>
-                    <button class="btn btn-main cf-submit" type="submit"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-2 1.4-.51.08-1.16.11-1.87-.12-.43-.14-.99-.32-1.7-.63-2.98-1.29-4.93-4.29-5.08-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.6-.37.79-.37h.57c.18 0 .43-.07.67.51.25.6.84 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.07.17-.2.74-.87.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.12.07.72-.17 1.41Z"/></svg>Enviar por WhatsApp</button>
-                    <p class="cf-note">No guardamos tus datos: el mensaje se arma en tu WhatsApp.</p>
+                    <a class="btn btn-line" id="p-plan-b" href="#" target="_blank" rel="noopener" hidden><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-2 1.4-.51.08-1.16.11-1.87-.12-.43-.14-.99-.32-1.7-.63-2.98-1.29-4.93-4.29-5.08-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.6-.37.79-.37h.57c.18 0 .43-.07.67.51.25.6.84 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.07.17-.2.74-.87.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.12.07.72-.17 1.41Z"/></svg>Mandarla por WhatsApp</a>
+                    <button class="btn btn-main cf-submit" type="submit" id="p-btn">Enviar</button>
+                    <p class="cf-note">Usamos tus datos solo para contestarte. Más info en la <a href="../politica-de-privacidad/" style="text-decoration:underline;text-underline-offset:3px">política de privacidad</a>.</p>
                     <datalist id="p-locs"><option value="Campana"><option value="Zárate"><option value="Lima"><option value="Baradero"><option value="San Pedro"><option value="Gobernador Castro"><option value="Ramallo"><option value="San Nicolás"><option value="Villa Constitución"><option value="Empalme"><option value="Arroyo Seco"><option value="Rosario"><option value="Arrecifes"><option value="Pergamino"><option value="Salto"><option value="Chacabuco"><option value="Luján"><option value="Mercedes"><option value="San Antonio de Areco"></datalist>
                 </form>
                 <div class="ca-form pz-hecho" id="hecho" hidden tabindex="-1">
                     <span class="ok" aria-hidden="true">✓</span>
-                    <h2>Se abrió WhatsApp con tu consulta.</h2>
-                    <p>Mandá el mensaje y sumá dos o tres fotos del lugar en el mismo chat. Con eso te armamos el presupuesto sin cargo.</p>
-                    <a class="btn btn-main" id="re-wa" href="#" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-2 1.4-.51.08-1.16.11-1.87-.12-.43-.14-.99-.32-1.7-.63-2.98-1.29-4.93-4.29-5.08-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.6-.37.79-.37h.57c.18 0 .43-.07.67.51.25.6.84 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.07.17-.2.74-.87.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.12.07.72-.17 1.41Z"/></svg>Abrir WhatsApp de nuevo</a>
-                    <button class="pz-link" type="button" id="editar">Corregir la ficha</button>
+                    <h2 id="h-tit">Recibimos tu consulta.</h2>
+                    <p id="h-txt">Te escribimos por WhatsApp para pedirte fotos del lugar y pasarte el presupuesto sin cargo.</p>
+                    <a class="pz-link" id="re-wa" href="#" target="_blank" rel="noopener">¿Preferís escribirnos ya? Abrí WhatsApp</a>
                 </div>
             </div>
         </section>
@@ -158,31 +159,41 @@
     <script>
         (function () {
             const f = document.getElementById('ficha'), err = document.getElementById('p-error'), hecho = document.getElementById('hecho');
+            const btn = document.getElementById('p-btn'), planB = document.getElementById('p-plan-b');
             const m2 = document.getElementById('p-m2'), nose = document.getElementById('p-nose');
             nose.addEventListener('change', () => { m2.disabled = nose.checked; if (nose.checked) m2.value = ''; });
-            const nombres = { superficie: '¿Qué superficie?', lugar: '¿Qué es el lugar?', domicilio: 'el domicilio de la obra', localidad: 'la localidad', nombre: 'tu nombre' };
-            f.addEventListener('submit', (e) => {
+            const nombres = { superficie: '¿Qué superficie?', lugar: '¿Qué es el lugar?', domicilio: 'el domicilio de la obra', localidad: 'la localidad', nombre: 'tu nombre', whatsapp: 'tu WhatsApp' };
+            const wa = (t) => 'https://wa.me/5491159547352?text=' + encodeURIComponent(t);
+            f.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 const d = Object.fromEntries(new FormData(f));
-                const falta = ['superficie', 'lugar', 'domicilio', 'localidad', 'nombre'].find((k) => !(d[k] || '').trim());
+                const falta = ['superficie', 'lugar', 'domicilio', 'localidad', 'nombre', 'whatsapp'].find((k) => !(d[k] || '').trim());
+                planB.hidden = true;
                 if (falta) {
                     err.textContent = falta === 'superficie' || falta === 'lugar' ? `Elegí una opción en «${nombres[falta]}».` : `Falta ${nombres[falta]}.`;
-                    err.hidden = false;
-                    const campo = f.querySelector(`[name="${falta}"]`); campo.focus();
-                    return;
+                    err.hidden = false; f.querySelector(`[name="${falta}"]`).focus(); return;
                 }
+                if (d.whatsapp.replace(/\D/g, '').length < 8) { err.textContent = 'Revisá tu WhatsApp: tiene que tener el código de área.'; err.hidden = false; f.querySelector('[name="whatsapp"]').focus(); return; }
                 err.hidden = true;
-                const metros = d.nose ? 'no sé' : (d.m2 ? `${d.m2} m²` : 'no sé');
-                let msj = 'Hola, quiero pedir un presupuesto sin cargo a Impermeabilización elástica Solmi.\n';
-                msj += `\n· Trabajo: ${d.trabajo}\n· Superficie: ${d.superficie}\n· Lugar: ${d.lugar}\n· Domicilio: ${d.domicilio.trim()}, ${d.localidad.trim()}\n· Metros aproximados: ${metros}\n· Nombre: ${d.nombre.trim()}`;
-                if ((d.detalles || '').trim()) msj += `\n· Detalles: ${d.detalles.trim()}`;
-                msj += '\n\nAhora les mando fotos del lugar.';
-                const url = 'https://wa.me/5491159547352?text=' + encodeURIComponent(msj);
-                document.getElementById('re-wa').href = url;
-                window.open(url, '_blank');
-                f.hidden = true; hecho.hidden = false; hecho.focus();
+                const metros = d.nose ? 'No sabe' : (d.m2 ? `${d.m2} m²` : 'No sabe');
+                const datos = { 'Nombre': d.nombre.trim(), 'WhatsApp': d.whatsapp.trim(), 'Tipo de trabajo': d.trabajo, 'Superficie': d.superficie, 'Lugar': d.lugar,
+                    'Domicilio': `${d.domicilio.trim()}, ${d.localidad.trim()}`, 'Metros aproximados': metros, 'Detalles': (d.detalles || '').trim() || '—' };
+                const texto = 'Hola, quiero pedir un presupuesto sin cargo a Impermeabilización elástica Solmi.\n\n' + Object.entries(datos).map(([k, v]) => `· ${k}: ${v}`).join('\n');
+                btn.disabled = true; btn.textContent = 'Enviando…';
+                try {
+                    const res = await fetch('https://formsubmit.co/ajax/impermeabilizacionsolmiar@gmail.com', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                        body: JSON.stringify(Object.assign({ _subject: `Consulta de la web · ${datos['Nombre']} · ${d.localidad.trim()}`, _template: 'table', _captcha: 'false' }, datos)) });
+                    const j = await res.json().catch(() => ({}));
+                    if (!res.ok || String(j.success) !== 'true') throw new Error(j.message || 'error');
+                    document.getElementById('h-tit').textContent = `¡Listo, ${datos['Nombre'].split(' ')[0]}! Recibimos tu consulta.`;
+                    document.getElementById('h-txt').textContent = `Te escribimos al ${datos['WhatsApp']} para pedirte fotos del lugar y pasarte el presupuesto sin cargo.`;
+                    document.getElementById('re-wa').href = wa(texto);
+                    f.hidden = true; hecho.hidden = false; hecho.focus();
+                } catch (x) {
+                    err.textContent = 'No se pudo enviar la ficha. Mandanos la consulta por WhatsApp: ya va con todos tus datos.';
+                    err.hidden = false; planB.href = wa(texto); planB.hidden = false;
+                } finally { btn.disabled = false; btn.textContent = 'Enviar'; }
             });
-            document.getElementById('editar').addEventListener('click', () => { hecho.hidden = true; f.hidden = false; f.querySelector('input').focus(); });
         })();
     </script>
 </body>

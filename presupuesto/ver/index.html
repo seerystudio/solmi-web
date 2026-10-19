@@ -94,14 +94,14 @@
                     <div class="pv-aviso" id="v-vencido" hidden></div>
                     <div class="cf-group" id="v-firma-g"><label for="v-firma">Escribí tu nombre y apellido para aceptarlo</label><input id="v-firma" name="firma" autocomplete="name" required></div>
                     <p class="pz-error" id="v-error" role="alert" hidden></p>
-                    <button class="btn btn-main cf-submit" type="submit" id="v-btn"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-2 1.4-.51.08-1.16.11-1.87-.12-.43-.14-.99-.32-1.7-.63-2.98-1.29-4.93-4.29-5.08-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.6-.37.79-.37h.57c.18 0 .43-.07.67.51.25.6.84 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.07.17-.2.74-.87.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.12.07.72-.17 1.41Z"/></svg><span>Acepto el presupuesto</span></button>
-                    <p class="cf-note" id="v-nota">Se abre WhatsApp con tu aceptación. Ahí coordinamos la seña y la fecha. ¿Dudas? <a id="v-dudas" href="#" target="_blank" rel="noopener" style="color:var(--azul);text-decoration:underline;text-underline-offset:3px">Escribinos</a>.</p>
+                    <button class="btn btn-main cf-submit" type="submit" id="v-btn"><span>Acepto el presupuesto</span></button>
+                    <a class="btn btn-line" id="v-plan-b" href="#" target="_blank" rel="noopener" hidden><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-2 1.4-.51.08-1.16.11-1.87-.12-.43-.14-.99-.32-1.7-.63-2.98-1.29-4.93-4.29-5.08-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.6-.37.79-.37h.57c.18 0 .43-.07.67.51.25.6.84 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.07.17-.2.74-.87.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.12.07.72-.17 1.41Z"/></svg>Mandarlo por WhatsApp</a>
+                    <p class="cf-note" id="v-nota">Nos llega tu aceptación y te escribimos por WhatsApp para coordinar la seña y la fecha. ¿Dudas? <a id="v-dudas" href="#" target="_blank" rel="noopener" style="color:var(--azul);text-decoration:underline;text-underline-offset:3px">Escribinos</a>.</p>
                 </form>
                 <div class="ca-form pz-hecho" id="hecho" hidden tabindex="-1">
                     <span class="ok" aria-hidden="true">✓</span>
                     <h2 id="h-tit">¡Gracias!</h2>
-                    <p id="h-txt">Se abrió WhatsApp con tu aceptación. Mandá el mensaje y coordinamos la seña y la fecha.</p>
-                    <a class="btn btn-main" id="re-wa" href="#" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-2 1.4-.51.08-1.16.11-1.87-.12-.43-.14-.99-.32-1.7-.63-2.98-1.29-4.93-4.29-5.08-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.6-.37.79-.37h.57c.18 0 .43-.07.67.51.25.6.84 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.07.17-.2.74-.87.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.12.07.72-.17 1.41Z"/></svg>Abrir WhatsApp de nuevo</a>
+                    <p id="h-txt">Recibimos tu aceptación. Te escribimos por WhatsApp para coordinar la seña y la fecha.</p>
                 </div>
                 <div class="ca-form pz-hecho" id="vacio" hidden>
                     <h2>No encontramos el presupuesto.</h2>
@@ -188,7 +188,7 @@
                 $('v-btn').querySelector('span').textContent = 'Pedir que lo actualicen';
                 $('v-nota').hidden = true;
             }
-            $('aceptar').addEventListener('submit', (e) => {
+            $('aceptar').addEventListener('submit', async (e) => {
                 e.preventDefault();
                 const i = +(new FormData($('aceptar')).get('op') || 0), op = p.ops[i];
                 let msj;
@@ -201,11 +201,22 @@
                     msj = `Hola, acepto el presupuesto Nº ${txt(p.n)} de Impermeabilización elástica Solmi` + (una ? '' : `, opción ${i + 1}`) + `: ${txt(op.d)}, ${plata(op.t)}.\nNombre: ${firma}\n\n¿Cómo seguimos con la seña y la fecha?`;
                     $('h-tit').textContent = `¡Gracias, ${firma.split(' ')[0]}!`;
                 }
-                if (vencido) { $('h-tit').textContent = 'Listo'; $('h-txt').textContent = 'Se abrió WhatsApp con tu pedido. Te mandamos el presupuesto actualizado.'; }
-                const url = WA + encodeURIComponent(msj);
-                $('re-wa').href = url;
-                window.open(url, '_blank');
-                $('aceptar').hidden = true; $('hecho').hidden = false; $('hecho').focus();
+                if (vencido) { $('h-tit').textContent = 'Listo'; $('h-txt').textContent = 'Recibimos tu pedido. Te escribimos por WhatsApp con el presupuesto actualizado.'; }
+                const firma = $('v-firma').value.trim(), btn = $('v-btn'), lbl = btn.querySelector('span'), antes = lbl.textContent;
+                const datos = { 'Presupuesto': `Nº ${txt(p.n)}`, 'Cliente': txt(p.c), 'Domicilio': [p.dom, p.loc].filter(Boolean).join(', '), 'Trabajo': txt(p.tr),
+                    'Pedido': vencido ? 'Venció: pide que se lo actualicen' : (una ? 'Acepta' : `Acepta la opción ${i + 1}`), 'Detalle': `${txt(op.d)} · ${plata(op.t)}` };
+                if (!vencido) datos['Firma'] = firma;
+                btn.disabled = true; lbl.textContent = 'Enviando…'; $('v-plan-b').hidden = true;
+                try {
+                    const res = await fetch('https://formsubmit.co/ajax/impermeabilizacionsolmiar@gmail.com', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                        body: JSON.stringify(Object.assign({ _subject: (vencido ? 'Pide actualizar' : 'Presupuesto aceptado') + ` · Nº ${txt(p.n)} · ${txt(p.c)}`, _template: 'table', _captcha: 'false' }, datos)) });
+                    const j = await res.json().catch(() => ({}));
+                    if (!res.ok || String(j.success) !== 'true') throw new Error('error');
+                    $('aceptar').hidden = true; $('hecho').hidden = false; $('hecho').focus();
+                } catch (x) {
+                    $('v-error').textContent = 'No se pudo enviar. Mandanos la respuesta por WhatsApp: ya va con todos los datos.'; $('v-error').hidden = false;
+                    $('v-plan-b').href = WA + encodeURIComponent(msj); $('v-plan-b').hidden = false;
+                } finally { btn.disabled = false; lbl.textContent = antes; }
             });
         })();
     </script>
