@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /presupuesto/
+
+Sitemap: https://xn--impermeabilizacinelsticasolmi-ync86c.com.ar/sitemap.xml
