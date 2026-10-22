@@ -261,6 +261,9 @@ ul { list-style: none; }
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 24px 30px rgba(0, 50, 80, 0.25));
+    /* La foto corta en las rodillas: se funde abajo en vez de terminar de golpe */
+    -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
 }
 .chip {
     position: absolute;
@@ -279,7 +282,7 @@ ul { list-style: none; }
 }
 .chip i { width: 10px; height: 10px; border-radius: 50%; background: var(--azul); flex: none; }
 .chip.c1 { left: 0; top: 30%; }
-.chip.c2 { right: 0; top: 52%; }
+.chip.c2 { right: 0; top: 64%; }
 .chip.c3 { left: 6%; bottom: 14%; }
 
 /* Entrada del hero */
