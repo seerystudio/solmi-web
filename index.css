@@ -519,6 +519,12 @@ ul { list-style: none; }
 .what-num { font-size: 15px; font-weight: 600; letter-spacing: 0.06em; color: var(--white); }
 .what-row h3 { font-size: clamp(22px, 2.1vw, 30px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; }
 .what-row p { font-size: 17px; line-height: 1.55; color: var(--white); max-width: 52ch; }
+/* cada servicio lleva a su página (2026-11-08) */
+.what-row h3 a { color: inherit; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 5px; text-decoration-thickness: 2px; transition: text-decoration-color 0.25s; }
+.what-row h3 a::after { content: "→"; display: inline-block; margin-left: 10px; font-weight: 600; transition: transform 0.35s var(--ease); }
+.what-row h3 a:hover { text-decoration-color: currentColor; }
+.what-row:hover h3 a::after, .what-row h3 a:focus-visible::after { transform: translateX(5px); }
+.what-row h3 a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 4px; }
 
 .what-cta {
     margin-top: 48px;
@@ -980,7 +986,7 @@ ul { list-style: none; }
     color: var(--white);
     padding: 72px 0 28px;
 }
-.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 0.8fr; gap: 40px; }
+.foot-grid { display: grid; grid-template-columns: 1.2fr 1.1fr 1.1fr 0.8fr; gap: 40px; }
 .foot-brand img { width: 320px; max-width: 100%; height: auto; }
 .foot-brand p { margin-top: 18px; font-size: 16px; line-height: 1.5; }
 .foot h3 { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); }
